@@ -1,3 +1,8 @@
+---
+layout: page
+title: Video
+permalink: /video/
+---
 <style>
 .video-container {
   display: flex;
