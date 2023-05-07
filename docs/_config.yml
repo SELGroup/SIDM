@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: SIDM:  Structural Information Decision-Making Framework for Reinforcement Learning
+title: SIDM-Structural Information Decision-Making Framework for Reinforcement Learning
 email: sudingli@buaa.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
-  This repository provides an implementation of SIDM, a novel, unsupervised, and adaptive Structural Information principles-based Decision-Making framework for Reinforcement Learning. SIDM improves policy quality, stability, and sample efficiency in various RL scenarios, including Deep RL, Hierarchical RL, and Multi-Agent RL. The repo includes code, examples, and pretrained models for visual gridworld, continuous control tasks, bipedal robot tasks, and a StarCraft II micromanagement benchmark.
+  Repository for SIDM, a novel unsupervised adaptive framework improving policy quality, stability, and sample efficiency in RL scenarios (Deep RL, Hierarchical RL, Multi-Agent RL). Includes code, examples, and pretrained m
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: suuttt
