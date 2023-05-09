@@ -28,6 +28,8 @@ twitter_username: suuttt
 github_username:  suuttt
 baseurl: "/SIDM"
 markdown: kramdown
+kramdown:
+   math_engine: mathjax
 
 # Build settings
 theme: minima

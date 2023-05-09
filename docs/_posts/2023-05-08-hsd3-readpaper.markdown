@@ -109,3 +109,18 @@ These mathematical symbols help to define the structure of the high-level and lo
    - 与现有方法相比，本文关注于在不借助额外监督或预训练任务设计的情况下学习低级技能，不强制要求针对特定行为类型的固定权衡。
 
 通过梳理和分类这些内容，您可以更好地理解文献回顾部分，并重点关注每个部分的核心内容。
+
+<!-- Parse the Latex divs with Katex-->
+<script type="text/javascript">
+  $("script[type='math/tex']").replaceWith(
+    function(){
+      var tex = $(this).text();
+      return katex.renderToString(tex, {displayMode: false});
+  });
+  
+  $("script[type='math/tex; mode=display']").replaceWith(
+    function(){
+      var tex = $(this).text();
+      return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+  });
+</script>
