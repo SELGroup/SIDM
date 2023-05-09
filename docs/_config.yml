@@ -27,6 +27,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: suuttt
 github_username:  suuttt
 baseurl: "/SIDM"
+markdown: kramdown
 
 # Build settings
 theme: minima
@@ -52,5 +53,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-markdown: kramdown
 
