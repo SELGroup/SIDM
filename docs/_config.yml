@@ -22,7 +22,7 @@ title: SIDM-Structural Information Decision-Making Framework for Reinforcement L
 email: sudingli@buaa.edu.cn
 description: >- # this means to ignore newlines until "baseurl:"
   Repository for SIDM, a novel unsupervised adaptive framework improving policy quality, stability, and sample efficiency in RL scenarios (Deep RL, Hierarchical RL, Multi-Agent RL). Includes code, examples, and pretrained m
-baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: suuttt
 github_username:  suuttt
@@ -52,3 +52,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+kramdown:
+  input: GFM
+  math_engine: mathjax
