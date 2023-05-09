@@ -52,6 +52,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-kramdown:
-  input: GFM
-  math_engine: mathjax
+markdown:kramdown
+
