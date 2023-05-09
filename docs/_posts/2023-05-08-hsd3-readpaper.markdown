@@ -74,7 +74,7 @@ With a task- and state-dependent policy, it is possible to not only select the r
 In the original text, the following mathematical symbols are used:
 <div>
 
-1. $\left\{\pi_F^{\text {lo }}: \mathcal{S}^{\mathrm{p}} \times \mathcal{G}^F \rightarrow A\right\}_{F \in \mathcal{F}}$: This notation represents a set of low-level goal-directed skill policies ($\pi_F^{\text {lo }}$) for each feature set $F$ in the collection of feature sets $\mathcal{F}$. Each policy takes as input the proprioceptive observations ($\mathcal{S}^{\mathrm{p}}$) and a goal ($\mathcal{G}^F$) from the goal space associated with the specific feature set $F$. The policy outputs an action ($A$) to be executed by the robot.
+1. $$\left\{\pi_F^{\text {lo }}: \mathcal{S}^{\mathrm{p}} \times \mathcal{G}^F \rightarrow A\right\}_{F \in \mathcal{F}}$$: This notation represents a set of low-level goal-directed skill policies ($\pi_F^{\text {lo }}$) for each feature set $F$ in the collection of feature sets $\mathcal{F}$. Each policy takes as input the proprioceptive observations ($\mathcal{S}^{\mathrm{p}}$) and a goal ($\mathcal{G}^F$) from the goal space associated with the specific feature set $F$. The policy outputs an action ($A$) to be executed by the robot.
 
 2. $\pi^{\mathrm{f}}: S \rightarrow \mathcal{F}$: This notation defines the high-level policy that takes the current state ($S$) as input and selects a goal space from the collection of goal spaces ($\mathcal{F}$). The output is a specific feature set $F$ that the policy determines to be the most appropriate for the current state.
 
