@@ -72,6 +72,7 @@ With a task- and state-dependent policy, it is possible to not only select the r
 
 ### formulization
 In the original text, the following mathematical symbols are used:
+<div>
 
 1. $\left\{\pi_F^{\text {lo }}: \mathcal{S}^{\mathrm{p}} \times \mathcal{G}^F \rightarrow A\right\}_{F \in \mathcal{F}}$: This notation represents a set of low-level goal-directed skill policies ($\pi_F^{\text {lo }}$) for each feature set $F$ in the collection of feature sets $\mathcal{F}$. Each policy takes as input the proprioceptive observations ($\mathcal{S}^{\mathrm{p}}$) and a goal ($\mathcal{G}^F$) from the goal space associated with the specific feature set $F$. The policy outputs an action ($A$) to be executed by the robot.
 
@@ -80,6 +81,8 @@ In the original text, the following mathematical symbols are used:
 3. $\pi^{\mathrm{g}}: S \times \mathcal{F} \rightarrow \mathcal{G}^F$: This notation defines the second part of the high-level policy that takes the current state ($S$) and the selected feature set $F$ as input and outputs a specific goal ($g$) from the goal space associated with that feature set ($\mathcal{G}^F$).
 
 These mathematical symbols help to define the structure of the high-level and low-level policies and their relationships in a concise manner. They indicate the inputs and outputs of each policy and demonstrate how the policies interact in the hierarchical reinforcement learning framework.
+
+</div>
 
 ## related work
 在这部分中，作者回顾了与层次化强化学习相关的工作。下面是对这部分内容的梳理和分类：
