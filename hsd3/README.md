@@ -1,3 +1,7 @@
+the skill learning model is based on HSD3 model whose readme is below
+
+---
+
 # Hierarchical Skills for Efficient Exploration
 
 This is the source code release for the paper [Hierarchical Skills for Efficient
