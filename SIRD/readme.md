@@ -1,6 +1,5 @@
 # Role Discovery Mechanism.<br>
-The ``SIRD`` is a mathematical structural information principles-based role discovery method.
-
+The ``SIRD`` is a mathematical structural information principles-based role discovery method.<br>
 The implementation is written in ``Pytorch`` and based on ``PyMARL`` and ``SMAC``.<br>
 Ths source code and partial experimental results are respectively shown in ``src`` and ``result``.<br>
 
