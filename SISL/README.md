@@ -1,4 +1,4 @@
-# Structural Information prinples-based Skill Learning (SISL)
+# Skill Learning Mechanism
 
 This repository contains the source code for SISL mechanism, including:
 

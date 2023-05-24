@@ -1,0 +1,13 @@
+git+git://github.com/deepmind/dm_control.git#egg=dm_control
+git+git://github.com/1nadequacy/dmc2gym.git#egg=dmc2gym
+tb-nightly
+imageio
+imageio-ffmpeg
+scikit-image
+tabulate
+torch
+torchvision
+absl-py
+pyparsing
+pillow==6.1
+termcolor
