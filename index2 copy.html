@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #F5F5F5;
+        color: #000;
+    }
+    h1 {
+        color: #800000;
+    }
+    h2 {
+        color: #404040;
+    }
+    table {
+        width: 100%;
+    }
+    td, th {
+        padding: 15px;
+        text-align: left;
+    }
+    hr {
+        border-top: 2px solid #B0B0B0;
+    }
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+    </style>
+</head>
+<body>
+    <h1>Your Website Title</h1>
+
+    <!-- Image instead of video -->
+    <figure>
+        <img src="docs/framework.png" alt="Framework">
+        <figcaption>Fig.1: The Overall Framework of SIDM</figcaption>
+    </figure>
+
+    <!-- Authors -->
+    <h2>Authors</h2>
+    <p><strong>Xianghua Zeng</strong> is a Ph.D. candidate at Beihang University. He specializes in Reinforcement Learning and Information Theory.</p>
+
+    <p><strong>Hao Peng</strong> is an Associate Professor at Beihang University. His research focuses on representation learning, social network mining, and reinforcement learning. He has published over 80 papers in top-tier journals and conferences.</p>
+
+    <p><strong>Dingli Su</strong> is a Ph.D. candidate at Beihang University. His research interests are Machine Learning and Information Theory.</p>
+
+    <p><strong>Angsheng Li</strong> is a professor at Beihang University. His research areas include Computability Theory, Computational Theory, and Information Science. He focuses on mathematical principles of the information world and structural information principles of machine learning and intelligent machinery.</p>
+
+    <!-- Abstract -->
+    <h2>Abstract</h2>
+    <p>This paper presents SIDM, a novel framework for Reinforcement Learning (RL). RL is a type of machine learning that acquires knowledge by interacting with its environment to achieve certain goals. However, RL algorithms often need fine-tuning of hyperparameters for optimal performance, especially in complex environments. SIDM overcomes these challenges by implementing a novel information-theoretic approach, improving sample efficiency, policy effectiveness, and does not require manual hyperparameter tuning.</p>
+
+    <!-- Approach -->
+    <h2>Approach</h2>
+    <p>The SIDM framework includes modules for structuralization, sparsification, optimization, and abstraction. It constructs graphs using action-observation histories, then minimizes entropy in these graphs to create an optimal encoding tree. This tree enables hierarchical state or action abstraction, facilitating more efficient decision-making. SIDM is applicable to a variety of tasks, and in tasks with continuous spaces, it operates by discretizing and sampling.</p>
+
+    <!-- Videos -->
+    <h2>Videos</h2>
+    <video width="320" height="240" controls>
+        <source src="video/SISL-hurdlelimbos.mp4" type="video/mp4">
+    </video>
+    <video width="320" height="240" controls>
+        <source src="video/NoSISL-stairs-16.mp4" type="video/mp4">
+    </video>
+    <video width="320" height="240" controls>
+        <source src="video/NoSISL-polebalance-15.mp4" type="video/mp4">
+    </video>
+    <video width="320" height="240" controls>
+        <source src="video/SISL-stairs-video-41.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
