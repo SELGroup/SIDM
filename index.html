@@ -1,18 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SIDM</title>
-  <!-- Add any other meta tags, stylesheets, or scripts here -->
-</head>
-<body>
-  <h1>Welcome to the SIDM project</h1>
-  <p>This is the homepage for the SIDM project.</p>
-  <!-- Add your video here -->
-  <video autoplay muted loop playsinline poster="poster-teaser.webp">
-    <source src="https://drive.google.com/uc?export=download&id=1Dmd7wnhg_naSBAsFWLMyK9JY5yWeCHzr">
-  </video>
-  <!-- Add more content as needed -->
-</body>
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            color: #404040;
+        }
+        h1 {
+            color: #800000;
+        }
+        h2 {
+            color: #404040;
+        }
+        table {
+            width: 100%;
+        }
+        td, th {
+            padding: 15px;
+            text-align: left;
+        }
+        hr {
+            border-top: 2px solid #4a3737;
+        }
+        video {
+            width: 100%;
+            height: auto;
+        }
+        </style>
+    </head>
+
+<body onload="init()">
+    <div id="main">
+    <h1>Self-Improving Deep Learning (SIDM)</h1>
+    <h2>Publication Year</h2>
+    <div id="authors">
+        <table>
+            <tr>
+                <td><a href="Xianghua_Zeng_link">Xianghua Zeng</a></td>
+                <td><a href="Hao_Peng_link">Hao Peng</a></td>
+                <td><a href="Dingli_Su_link">Dingli Su</a></td>
+                <td><a href="Angsheng_Li_link">Angsheng Li</a></td>
+            </tr>
+            <tr>
+                <td class="affiliation">School of Computer Science and Engineering, Beihang University</td>
+                <td class="affiliation">School of Cyber Science and Technology, Beihang University</td>
+                <td class="affiliation">School of Computer Science and Engineering, Beihang University</td>
+                <td class="affiliation">School of Computer Science, Beihang University</td>
+            </tr>
+        </table>
+        
+    </div>
+    
+    <hr>
+<p>
+<b>TL;DR</b>&nbsp; We propose a new, unsupervised, and adaptive Decision-Making framework called SIDM for Reinforcement Learning. This approach handles high complexity environments without manual intervention, and increases sample efficiency and policy effectiveness.
+</p>
+<p>
+<a href="link_to_your_paper">Paper</a> | 
+<a href="https://github.com/RingBDStack/SIDM">Code</a>
+</p>
+
+
+<hr>
+<div id="abstract">
+<p>
+<b>Abstract</b>&nbsp; Reinforcement Learning (RL) algorithms often rely on specific hyperparameters to guarantee their performances, especially in highly complex environments. This paper proposes an unsupervised and adaptive Decision-Making framework called SIDM for RL, which uses action and state abstractions to address this issue. SIDM improves policy quality, stability, and sample efficiency by up to 18.75%, 88.26%, and 64.86%, respectively.
+</p>
+</div>
+
+<hr>
+<div id="approach">
+    <img src="./docs/framework.png" alt="Framework">
+<p>
+<b>Approach</b>&nbsp; The SIDM framework includes structuralization, sparsification, optimization, and hierarchical abstraction modules. We construct homogeneous state and action graphs, minimize structural entropy to generate optimal encoding trees, and design an aggregation function for hierarchical state or action abstraction. Based on the hierarchical abstractions, we calculate tree node representations to achieve state abstraction in DRL, role discovery in MARL, and skill learning in HRL.
+</p>
+</div>
+
+<hr>
+<p>
+
+    <a name="videos"/>
+    <b>Videos</b>
+    </p>
+    
+    <p>
+    <b>Example Video 1</b>&nbsp;
+    Explanation of your first video.
+    </p>
+    <div id="videos-pretrain">
+      <div class="htabcontent">
+        <video controls playsinline preload="none">
+          <source src="https://github.com/RingBDStack/SIDM/blob/main/video/NoSISL-stairs-16.mp4"/>
+        </video>
+      </div>
+    </div>
+    
+    <p>
+    <b>Example Video 2</b>&nbsp;
+    Explanation of your second video.
+    </p>
+    <div id="videos-pretrain">
+      <div class="htabcontent">
+        <video controls playsinline preload="none">
+          <source src="https://github.com/RingBDStack/SIDM/blob/main/video/SISL-stairs-video-41.mp4"/>
+        </video>
+      </div>
+    </div>
+    
+    <hr>
+    </div>
+    </body>
+    
 </html>
