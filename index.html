@@ -4,50 +4,69 @@
     <head>
 
         <style>
-        .video-container {
-            width: 240px;
-            height: 240px;
-            overflow: hidden;
-            position: relative;
-        }
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            color: #404040;
-        }
-        h1 {
-            color: #800000;
-        }
-        h2 {
-            color: #404040;
-        }
-        table {
-            width: 100%;
-        }
-        td, th {
-            padding: 15px;
-            text-align: left;
-        }
-        hr {
-            border-top: 2px solid #4a3737;
-        }
-        video {
-            width: 100%;
-            height: auto;
-        }
+            .video-container {
+    width: 240px;
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+}
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #404040;
+    /* padding: 0 25%; Adjust as needed */
+}
+.content-section {
+    padding: 0 25%; /* Add padding to content sections only */
+}
+h1 {
+    color: #800000;
+}
+h2 {
+    color: #404040;
+}
+table {
+    width: 100%;
+}
+td, th {
+    padding: 15px;
+    text-align: left;
+}
+/* Modify only the first column of the second table */
+#secondTable td:first-child, #secondTable th:first-child {
+    width: 5%; /* Adjust as needed */
+
+}
+#secondTable {
+    padding: 0 15%; /* Adjust as needed */
+}
+#secondTable td, #secondTable th {
+    border: 1px solid black; /* This will give a border to your table cells */
+    padding: 15px;
+    text-align: left;
+}
+hr {
+    border-top: 2px solid #4a3737;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+
         </style>
     </head>
 
 <body onload="init()">
     <div id="main">
+        <div class="content-section">
     <h1>Effective and Efficient Reinforcement Learning Based on Structural Information Principles (SIDM)</h1>
     <h2> Submited IEEE TPAMI in 2023.5</h2>
     <div id="authors">
@@ -98,9 +117,10 @@
 
     <a name="videos"/>
     <b>Videos</b>
+</div>
     </p>
     
-    <table>
+    <table id="secondTable">
       <tr>
         <th>Task</th>
         <th>SISL</th>
@@ -129,7 +149,8 @@
       </tr>
       
       <tr> 
-        <td>PoleBalance</td> 
+        <td>Pole
+            Balance</td> 
         <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SISL-pbalance-40.mp4" type="video/mp4"></video></td>
         <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SAC-pbalance-40.mp4" type="video/mp4"></video></td>
         <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SE-pbalance-77.mp4" type="video/mp4"></video></td>
