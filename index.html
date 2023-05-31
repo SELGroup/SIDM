@@ -2,7 +2,22 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+
         <style>
+        .video-container {
+            width: 240px;
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f8f8;
@@ -85,29 +100,46 @@
     <b>Videos</b>
     </p>
     
-    <p>
-    <b>Example Video 1</b>&nbsp;
-    Explanation of your first video.
-    </p>
-    <div id="videos-pretrain">
-      <div class="htabcontent">
-        <video controls playsinline preload="none">
-          <source src="https://github.com/RingBDStack/SIDM/blob/main/video/NoSISL-stairs-16.mp4"/>
-        </video>
-      </div>
-    </div>
+    <table>
+      <tr>
+        <th>Task</th>
+        <th>SISL</th>
+        <th>SAC</th>
+        <th>SE</th>
+        <th>HIRO</th>
+        <th>HSD</th>
+      </tr>
+      
+      <tr>
+        <td>Hurdles</td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SISL-hurdles-49.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SAC-hurdles-40.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SE-hurdles-80.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/HIRO-hurdles-40.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/HSD-hurdles-9.mp4" type="video/mp4"></video></td>
+      </tr> 
+ 
+      <tr> 
+        <td>Limbo</td> 
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SISL-limbo-40.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SAC-limbo-40.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SE-limbo-9.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/HIRO-limbo-40.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/HSD-limbo-0.mp4" type="video/mp4"></video></td>
+      </tr>
+      
+      <tr> 
+        <td>PoleBalance</td> 
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SISL-pbalance-40.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SAC-pbalance-40.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/SE-pbalance-77.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/HIRO-pbalance-123.mp4" type="video/mp4"></video></td>
+        <td class="video-container"><video width="320" height="240" controls autoplay muted><source src="./video/HSD-pbalance-8.mp4" type="video/mp4"></video></td>
+      </tr>
+      <!-- Additional rows as needed -->
+    </table>
     
-    <p>
-    <b>Example Video 2</b>&nbsp;
-    Explanation of your second video.
-    </p>
-    <div id="videos-pretrain">
-      <div class="htabcontent">
-        <video controls playsinline preload="none">
-          <source src="https://github.com/RingBDStack/SIDM/blob/main/video/SISL-stairs-video-41.mp4"/>
-        </video>
-      </div>
-    </div>
+    
     
     <hr>
     </div>
