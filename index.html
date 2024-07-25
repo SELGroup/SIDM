@@ -106,10 +106,24 @@ video {
 
 <hr>
 <div id="approach">
+  <img src="./docs/demo.png" alt="Framework" style="display: block; max-width: 100%; margin: auto;">
   <img src="./docs/framework.png" alt="Framework" style="display: block; max-width: 100%; margin: auto;">
-<p>
-<b>Approach</b>&nbsp; The SIDM framework includes structuralization, sparsification, optimization, and hierarchical abstraction modules. We construct homogeneous state and action graphs, minimize structural entropy to generate optimal encoding trees, and design an aggregation function for hierarchical state or action abstraction. Based on the hierarchical abstractions, we calculate tree node representations to achieve state abstraction in DRL, role discovery in MARL, and skill learning in HRL.
-</p>
+  <p>
+    <b>Approach</b>&nbsp; In this work, we propose a novel Structural Information principles-based hierarchical Decision Making framework, called SIDM, to address the above challenges:
+    </p>
+    <p>
+    1. <b>Adaptive Abstraction Mechanism</b>: Compresses high-dimensional and noisy state-action information by creating state and action abstractions. This mechanism uses an encoding tree to group states or actions with similar features into the same community and employs an aggregation function to derive abstract representations of states and actions.
+    </p>
+    <p>
+    2. <b>Directed Structural Entropy</b>: Formally defined and optimized to overcome the limitations of undirected structural information and meet the requirements of directed state transitions. Using directed entropy, we quantify the transition probabilities between abstract states and identify frequently transitioning abstract communities as skills, facilitating unsupervised skill discovery.
+    </p>
+    <p>
+    3. <b>Skill-Based and Role-Based Methods</b>: Builds on abstract actions and discovered skills to develop a skill-based method for single-agent learning and a role-based method for multi-agent collaboration. These methods operate independently of manual assistance and can flexibly integrate various RL algorithms to enhance performance.
+    </p>
+    <p>
+    4. <b>Extensive Experiments</b>: Conducted extensive experiments and comprehensive analyses on diverse well-established benchmarks, including visual gridworld navigation, continuous robotic control, and StarCraft II micromanagement. Comparative results show that our framework significantly improves the effectiveness, efficiency, and stability of policy learning over state-of-the-art baselines by up to 32.70%, 64.86%, and 88.26%, respectively.
+    </p>
+    
 </div>
 
 <hr>
