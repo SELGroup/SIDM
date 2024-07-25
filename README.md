@@ -1,7 +1,26 @@
-# SIDM
-Repository for the paper Effective Reinforcement Learning Based on Structural Information Principles.
+# Hierarchical Decision Making Based on Structural Information Principles (SIDM)
 
-a novel and general Structural Information principles-based framework for effective Decision-Making, namely SIDM, approached from an information-theoretic perspective.
+## Overview
+Welcome to the repository for our paper, "Hierarchical Decision Making Based on Structural Information Principles". This repository contains the code and supplementary materials for the SIDM framework, designed to improve hierarchical policy learning in both single-agent and multi-agent scenarios through structural information principles.
 
-a general framework and can be flexibly integrated with various single-agent and multi-agent RL algorithms, enhancing their performance.
-Extensive and empirical experiments are conducted on a visual gridworld, nine continuous control tasks, six bipedal and four 7-DoF fetching robotic tasks, and a StarCraft II micromanagement benchmark.<br>
+## Key Features
+- **Adaptive Environmental Abstraction**: Utilizes historical state-action information to create abstract representations of states and actions.
+- **Directed Structural Entropy**: Quantifies transition probabilities between abstract states to facilitate unsupervised skill discovery.
+- **Skill-Based Learning**: Enhances single-agent policy learning by integrating various RL algorithms.
+- **Role-Based Collaboration**: Improves multi-agent collaboration and performance through role-based methods.
+- **Performance Improvements**: Achieves up to 32.70%, 64.86%, and 88.26% improvements in effectiveness, efficiency, and stability, respectively, compared to state-of-the-art baselines.
+
+## Citation
+If you use this code in your research, please cite our paper:
+```
+@article{zeng2024SIDM,
+  title={Hierarchical Decision Making Based on Structural Information Principles},
+  author={Xianghua Zeng and Hao Peng and Dingli Su and Angsheng Li},
+  journal={submitting to Journal of Machine Learning Research},
+  year={2024},
+}
+```
+
+---
+
+Thank you for using SIDM! We hope our framework helps advance your research in hierarchical reinforcement learning.
