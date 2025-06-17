@@ -1,50 +1,44 @@
-# Skill Learning Mechanism
+## Requirements
 
-This repository contains the source code for SISL mechanism, including:
+- python 3.7+
+- mujoco 2.1
+- Ubuntu 18.04
 
-- Source code: for pre-training and hierarchical learning with SISL
-- Experimental Results
-- Video Demo
+## Installation Instructions
 
-For a dedicated benchmark suite, refer to [facebookresearch/bipedal-skills](https://github.com/facebookresearch/bipedal-skills).
+To install MuJoCo follow the instructions [here](https://github.com/openai/mujoco-py).
 
-## Setup
-
-1. Install PyTorch based on the [official instructions](https://pytorch.org/get-started). This code has been tested with PyTorch versions 1.8 and 1.9.
-
-2. Install remaining dependencies with:
-    ```sh
-    pip install -r requirements.txt
-    ```
-
-3. Optional: For optimal performance, install NVidia's [PyTorch extensions](https://github.com/NVIDIA/apex).
-
-## Usage
-
-The framework uses [Hydra](https://hydra.cc) for managing training configurations.
-
-### Pre-training SISL Skills
-
-To pre-train skill policies, use the `pretrain.py` script (requires a machine with 2 GPUs):
-```sh
-# Walker robot
-python pretrain.py -cn walker_pretrain
+```
+conda env create -f environment.yml
+conda activate sisl
+pip install -e .
 ```
 
-### SISL Control
+## Data Collection and Training
+To collect a dataset using the scripted controllers run the following command:
+```
+python data/collect_demos.py --num_trajectories 40000 --subseq_len 10 --task block
+```
+There are two sets of tasks `block` and `hook`
+The dataset collected for the `block` tasks can be used to train a downstream RL agent in the `FetchPyramidStack-v0`, `FetchCleanUp-v0` and `FetchSlipperyPush-v0` environments.
+The dataset collected for the `hook` task is used to train the downstream RL agent in the `FetchComplexHook-v0` environment.
+We collect the demonstration data for the hook and block based environments in the `FetchHook-v0` and `FetchPlaceMultiGoal-v0` environments respectively.
 
-Train high-level policy with SISL as follows:
-```sh
-# Walker robot
-python train.py -cn walker_sisl
+To train the skill modules on the collected dataset run the following command:
+```
+python train_skill_modules.py --config_file block/config.yaml --dataset_name fetch_block_40000
+```
+To visualise the performance of the trained skill module run the following command:
+```
+python utils/test_skill_modules.py --dataset_name fetch_block_40000 --task block --use_skill_prior True
 ```
 
-Pre-trained skill policies can be used by pointing to their location as follows:
-```sh
-# Walker robot
-python train.py -cn walker_sisl agent.lo.init_from=$PWD/pretrained-skills/walker.pt
+To train the SISL agent using the trained skill modules, run the following command:
+
 ```
-
-### Benchmark Baselines
-
-To run individual baselines, pass the relevant configuration name as the `-cn` argument to `train.py`. 
+python train_sisl_agent.py --config_file table_cleanup/config.yaml --dataset_name fetch_block_40000
+```
+  
+## Logging
+  
+All results are logged using [Weights and Biases](https://wandb.ai). An account and initial login is required to initialise logging as described on thier website.
