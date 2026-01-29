@@ -1,0 +1,33 @@
+# StarCraft II and binaries
+SIRD/3rdparty/
+**/StarCraftII/
+*.zip
+*.tar.gz
+
+# Experiment Results
+SIRD/results/
+**/tb_logs/
+**/sacred/
+**/models/
+
+# Temporary logs and debug files
+*.log
+*.log*
+*.txt
+SIRD/RODE
+
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+*.ipynb
+
+# Environments
+venv/
+.venv/
+env/
+.env/
+
+# OS specific
+.DS_Store

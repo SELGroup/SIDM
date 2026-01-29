@@ -192,7 +192,7 @@ class RODEMAC:
 
         spaces = []
         for cluster_i in range(self.n_clusters):
-            spaces.append((k_means.labels_ == cluster_i).astype(np.float))
+            spaces.append((k_means.labels_ == cluster_i).astype(float))
 
         o_spaces = copy.deepcopy(spaces)
         spaces = []

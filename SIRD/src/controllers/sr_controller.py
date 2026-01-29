@@ -193,8 +193,8 @@ class SRMAC:
         labels, n_clusters, reprs = se_cluster(self.n_actions, action_repr_array)
         spaces = []
         for cluster_i in range(self.n_clusters):
-            # spaces.append((k_means.labels_ == cluster_i).astype(np.float))
-            spaces.append((labels == cluster_i).astype(np.float))
+            # spaces.append((k_means.labels_ == cluster_i).astype(float))
+            spaces.append((labels == cluster_i).astype(float))
 
         o_spaces = copy.deepcopy(spaces)
         spaces = []
